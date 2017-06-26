@@ -1,0 +1,20 @@
+---
+title: "Leaflet"
+author: "Ruiyao Wang"
+date: "6/26/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Leaflet
+```{r}
+library(leaflet)
+my_map<-leaflet()%>%addTiles()%>%addMarkers(lat=39.29,lng=-76.6,popup="I don't know where I am")
+my_map
+```
+
+
+
